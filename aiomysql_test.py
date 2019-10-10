@@ -23,6 +23,7 @@ if __name__ == "__main__":
 
   # 使用 tornado 的 loop
   # 注意：这里如果将 current start 了，那么 loop 将开始循环，没有 run_sync 方法
+  # 测试 branch 是否创建成功
   loop = tornado.ioloop.IOLoop.current()
   loop.run_sync(get_message)
 
